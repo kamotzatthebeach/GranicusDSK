@@ -27,7 +27,6 @@ namespace WpfApplication1
 {           
     public partial class MainWindow : Window
     {
-
         DisplayWindow newWindow;
         public Granicus.MediaManager.SDK.MediaManager mediamanager;
     
