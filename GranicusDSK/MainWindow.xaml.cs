@@ -51,6 +51,7 @@ namespace WpfApplication1
             newWindow.CurrentMarquee.AlphaTo(0, time, ease, 0);
             newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
             FadeOutCanvas(newWindow.FullscreenLogo);
+            newWindow.WebLink.AlphaTo(0, time, ease, delay);
      
             
         }
@@ -250,6 +251,7 @@ namespace WpfApplication1
             double delay = 0;
             PercentHandler ease = AnimationTransitions.CubicEaseOut;       
             newWindow.TreeLogoLowerLeft.AlphaTo(1, time, ease, delay);
+            newWindow.WebLink.AlphaTo(1, time, ease, delay);
         }
 
         private void LiveLogoDeactivate_Click(object sender, RoutedEventArgs e)
@@ -260,6 +262,7 @@ namespace WpfApplication1
 
        
             newWindow.TreeLogoLowerLeft.AlphaTo(0, time, ease, delay);
+            newWindow.WebLink.AlphaTo(0, time, ease, delay);
         }
 
         private void ClearNameAndTitle_Click(object sender, RoutedEventArgs e)
