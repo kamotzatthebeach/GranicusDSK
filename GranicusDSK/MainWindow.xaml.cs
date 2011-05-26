@@ -472,6 +472,39 @@ namespace WpfApplication1
             });
 
         }
+
+        private void testBackgroundActivate_Click(object sender, RoutedEventArgs e)
+        {
+            double time = .75;
+            PercentHandler ease = AnimationTransitions.CubicEaseOut;
+
+            newWindow.testBackground.AlphaTo(1, time, ease, .3);
+        }
+
+        private void testBackgroundDeactivate_Click(object sender, RoutedEventArgs e)
+        {
+            double time = .75;
+            PercentHandler ease = AnimationTransitions.CubicEaseOut;
+
+            newWindow.testBackground.AlphaTo(0, time, ease, .3);
+        }
+
+        private void clearAll_Click(object sender, RoutedEventArgs e)
+        {
+            double time = .75;
+            double delay = 0;
+            PercentHandler ease = AnimationTransitions.CubicEaseOut;
+
+            FadeInCanvas(newWindow.FullscreenLogo);
+            FadeOut(newWindow.LowerThirdNameTag);
+            FadeOut(newWindow.LowerThirdJobTag);
+            newWindow.TreeLogoLowerLeft.AlphaTo(0, time, ease, delay);
+            MainLowerThirdDeactivateFunc();
+            newWindow.CurrentMarquee.AlphaTo(0, time, ease, 0);
+            newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
+            FadeOutCanvas(newWindow.FullscreenLogo);
+            newWindow.WebLink.AlphaTo(0, time, ease, delay);
+        }
     }
 
     // Class to agenda item data

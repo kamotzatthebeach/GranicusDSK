@@ -27,7 +27,7 @@
             </Canvas.Background>
         </Canvas>
 
-        <Image Canvas.Left="-59" Canvas.Top="-38" Height="1110" Name="image2" Stretch="Fill" Width="1413" Source="/;component/Images/videoTemplate-CouncilMeetings.jpg" Panel.ZIndex="-1000" Opacity="1" />
+        <Image Canvas.Left="-59" Canvas.Top="-38" Height="1110" Name="testBackground" Stretch="Fill" Width="1413" Source="/;component/Images/videoTemplate-CouncilMeetings.jpg" Panel.ZIndex="-1000" Opacity="0" />
     </Canvas>
  
 </Window>
