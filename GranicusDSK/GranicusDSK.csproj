@@ -20,7 +20,7 @@
     <PublishUrl>I:\GranicusDSK\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
@@ -30,7 +30,8 @@
     <InstallUrl>\\lowercasewin7\GranicusDSK\</InstallUrl>
     <ProductName>Horry County DSK</ProductName>
     <PublisherName>Lucas Richardson</PublisherName>
-    <ApplicationRevision>7</ApplicationRevision>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
