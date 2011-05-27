@@ -22,6 +22,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Xml;
+using System.Windows.Threading;
 
 namespace WpfApplication1
 {           
@@ -36,25 +37,46 @@ namespace WpfApplication1
             double delay = 0;
             PercentHandler ease = AnimationTransitions.CubicEaseOut;
 
-            InitializeComponent();
+            try
+            {
 
-            //Opens the display window
-            newWindow = new DisplayWindow();
-            newWindow.Show();
+                InitializeComponent();
 
-            //Initial animations to move items off of the screen
-            FadeInCanvas(newWindow.FullscreenLogo);
-            FadeOut(newWindow.LowerThirdNameTag);
-            FadeOut(newWindow.LowerThirdJobTag); 
-            newWindow.TreeLogoLowerLeft.AlphaTo(0, time, ease, delay);
-            MainLowerThirdDeactivateFunc();
-            newWindow.CurrentMarquee.AlphaTo(0, time, ease, 0);
-            newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
-            FadeOutCanvas(newWindow.FullscreenLogo);
-            newWindow.WebLink.AlphaTo(0, time, ease, delay);
-     
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show(ex.Message);
+
+            }
+
+                //Opens the display window
+                newWindow = new DisplayWindow();
+                newWindow.Show();
+
+                //Initial animations to move items off of the screen
+                FadeInCanvas(newWindow.FullscreenLogo);
+                FadeOut(newWindow.LowerThirdNameTag);
+                FadeOut(newWindow.LowerThirdJobTag);
+                newWindow.TreeLogoLowerLeft.AlphaTo(0, time, ease, delay);
+                MainLowerThirdDeactivateFunc();
+                newWindow.CurrentMarquee.AlphaTo(0, time, ease, 0);
+                newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
+                FadeOutCanvas(newWindow.FullscreenLogo);
+                newWindow.WebLink.AlphaTo(0, time, ease, delay);
             
+
         }
+
+        private void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+        {
+            Exception CurrentException = e.Exception;
+            while (CurrentException != null)
+            {
+                System.Windows.MessageBox.Show(CurrentException.Message);
+                CurrentException = CurrentException.InnerException;
+            }
+        }
+
 
         private void Window_Closed(object sender, EventArgs e)
         {

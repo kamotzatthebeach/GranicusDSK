@@ -42,14 +42,14 @@ namespace WpfApplication1
             //I use this commant to put it on a specific monitor for testing
             //Comment the next line and uncomment the foreach loop and other return for normal opterating condition
 
-            return Screen.AllScreens[2];
+            //return Screen.AllScreens[2];
 
-            //foreach (Screen screen in Screen.AllScreens)
-            //{
-            //    if (screen != Screen.PrimaryScreen)
-            //        return screen;
-            //}
-            //return Screen.PrimaryScreen;
+            foreach (Screen screen in Screen.AllScreens)
+            {
+                if (screen != Screen.PrimaryScreen)
+                    return screen;
+            }
+            return Screen.PrimaryScreen;
         }
 
     }
