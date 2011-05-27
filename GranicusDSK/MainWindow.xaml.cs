@@ -505,6 +505,16 @@ namespace WpfApplication1
             FadeOutCanvas(newWindow.FullscreenLogo);
             newWindow.WebLink.AlphaTo(0, time, ease, delay);
         }
+
+        private void executiveSessionActivate_Click(object sender, RoutedEventArgs e)
+        {
+            FadeInCanvas(newWindow.FullscreenExecutiveSession);
+        }
+
+        private void exectiveSessionDeactivate_Click(object sender, RoutedEventArgs e)
+        {
+            FadeOutCanvas(newWindow.FullscreenExecutiveSession);
+        }
     }
 
     // Class to agenda item data
