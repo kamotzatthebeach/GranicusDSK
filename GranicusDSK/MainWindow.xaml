@@ -1,66 +1,77 @@
 ﻿<Window x:Class="WpfApplication1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="GranicusDSK" WindowStyle="ThreeDBorderWindow" WindowState="Normal" WindowStartupLocation="CenterScreen" Closed="Window_Closed" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="664" Width="1106">
-    <Grid Visibility="Visible" Opacity="1" Height="625">
+        Title="GranicusDSK" WindowStyle="ThreeDBorderWindow" WindowState="Normal" WindowStartupLocation="CenterScreen" Closed="Window_Closed" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="621" Width="1106">
+    <Grid Visibility="Visible" Opacity="1" Height="586">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="7*" />
+            <ColumnDefinition Width="179*" />
+            <ColumnDefinition Width="890*" />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*" />
-            <RowDefinition Height="657*" />
+            <RowDefinition Height="175*" />
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="78*" />
+            <RowDefinition Height="79*" />
+            <RowDefinition Height="78*" />
+            <RowDefinition Height="96*" />
         </Grid.RowDefinitions>
-        <Button  Grid.Row="1" Margin="191,22,0,0" Name="AlAllen" Click="button2_Click_1" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top">
+        <Button  Grid.Row="1" Margin="176,22,0,0" Name="AlAllen" Click="button2_Click_1" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.Column="2" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="/;component/Images/Al%20Allen.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="819,22,0,0" Name="BobGrabowski" Panel.ZIndex="2" Click="BobGrabowski_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top">
+        <Button  Grid.Row="1" Margin="625,22,0,0" Name="BobGrabowski" Panel.ZIndex="2" Click="BobGrabowski_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/Bob%20Grabowski.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="549,22,0,0" Name="TomRice" Panel.ZIndex="2" Click="TomRice_Click" Height="111" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75">
+        <Button  Grid.Row="1" Margin="355,22,0,0" Name="TomRice" Panel.ZIndex="2" Click="TomRice_Click" Height="111" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Grid.Column="3">
             <Image Source="/;component/Images/Tom%20Rice.jpg" Panel.ZIndex="2" />
         </Button>
-        <Button  Grid.Row="1" Margin="371,22,0,0" Name="HaroldGWorley" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="HaroldGWorley_Click">
+        <Button  Grid.Row="1" Margin="177,22,0,0" Name="HaroldGWorley" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="HaroldGWorley_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/HaroldGWorley.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="281,22,0,0" Name="BrentSchulz" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="BrentSchulz_Click">
+        <Button  Grid.Row="1" Margin="87,22,0,0" Name="BrentSchulz" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="BrentSchulz_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/Brent%20Schulz.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="999,22,0,0" Name="MarionFoxworth" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="MarionFoxworth_Click">
+        <Button  Grid.Row="1" Margin="805,22,0,0" Name="MarionFoxworth" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="MarionFoxworth_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/Marion%20Foxworth.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="639,22,0,0" Name="GaryLoftus" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="GaryLoftus_Click">
+        <Button  Grid.Row="1" Margin="445,22,0,0" Name="GaryLoftus" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="GaryLoftus_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/Gary%20Loftus.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="11,22,0,0" Name="PaulDPriceJr" Panel.ZIndex="2" Click="PaulDPriceJr_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top">
+        <Button  Grid.Row="1" Margin="3,22,0,0" Name="PaulDPriceJr" Panel.ZIndex="2" Click="PaulDPriceJr_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1">
             <StackPanel>
                 <Image Source="/;component/Images/Paul%20D.%20Price,%20Jr.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="101,22,0,0" Name="JamesRFrazier" Panel.ZIndex="2" Click="JamesRFrazier_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top">
+        <Button  Grid.Row="1" Margin="86,22,0,0" Name="JamesRFrazier" Panel.ZIndex="2" Click="JamesRFrazier_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.Column="2">
             <StackPanel>
                 <Image Source="/;component/Images/JamesRFrazier.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="909,22,0,0" Name="CarlSchwartzkopf" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="CarlSchwartzkopf_Click">
+        <Button  Grid.Row="1" Margin="715,22,0,0" Name="CarlSchwartzkopf" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="CarlSchwartzkopf_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/Carl%20Schwartzkopf.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="459,22,0,0" Name="JodyPrince" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="JodyPrince_Click">
+        <Button  Grid.Row="1" Margin="265,22,0,0" Name="JodyPrince" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="JodyPrince_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/Jody%20Prince.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
-        <Button  Grid.Row="1" Margin="729,22,0,0" Name="WPaulPrince" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="WPaulPrince_Click">
+        <Button  Grid.Row="1" Margin="535,22,0,0" Name="WPaulPrince" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="WPaulPrince_Click" Grid.Column="3">
             <StackPanel>
                 <Image Source="/;component/Images/WPaulPrince.jpg" Panel.ZIndex="2" />
             </StackPanel>
@@ -68,51 +79,52 @@
 
 
 
-        <Label Content="Al Allen" Grid.Row="1" Margin="205,134,819,463" Name="label1" FontFamily="Segoe UI" IsEnabled="True" FontWeight="Bold" FontStretch="Normal" Panel.ZIndex="2" FontSize="9" />
-        <Label Content="Bob Grabowski" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="815,134,0,0" Name="BobGrobowskiLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="94" Foreground="Black" />
-        <Label Content="Tom Rice" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="559,134,0,0" Name="TomRiceLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" />
-        <Label Content="Paul D Price Jr." FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" IsEnabled="False" Margin="8,134,982,463" Name="PaulDPriceJrLabel" Panel.ZIndex="2" Foreground="Black" />
-        <Label Content="James R. Frazier" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" IsEnabled="False" Margin="94,134,898,463" Name="JamesRFrazierLabel" Panel.ZIndex="2" Foreground="Black" />
-        <Label Content="Brent Schulz" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="281,134,0,0" Name="BrentSchulzLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" />
-        <Label Content="Harold G. Worley" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="363,134,0,0" Name="HaroldGWorleyLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="94" Foreground="Black" />
-        <Label Content="Gary Loftus" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="644,134,0,0" Name="GaryLoftusLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" />
-        <Label Content="W. Paul Prince" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="727,134,0,0" Name="WPaulPrinceLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="90" Foreground="Black" />
-        <Label Content="Carl Schwartzkopf" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="894,134,0,0" Name="CarlSchwartzkopfLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="102" Foreground="Black" />
-        <Label Content="Marion Foxworth III" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="986,134,0,0" Name="MarionFoxworthIIILabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="119" Foreground="Black" />
-        <Label Content="Jody Prince" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="464,134,0,0" Name="JodyPrinceLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" />
+        <Label Content="Al Allen" Grid.Row="1" Margin="11,134,0,0" Name="label1" FontFamily="Segoe UI" IsEnabled="True" FontWeight="Bold" FontStretch="Normal" Panel.ZIndex="2" FontSize="9" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Grid.Column="3" />
+        <Label Content="Bob Grabowski" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="621,134,0,0" Name="BobGrobowskiLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="94" Foreground="Black" Grid.Column="3" />
+        <Label Content="Tom Rice" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="365,134,0,0" Name="TomRiceLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" Grid.Column="3" />
+        <Label Content="Paul D Price Jr." FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" IsEnabled="False" Margin="0,134,0,0" Name="PaulDPriceJrLabel" Panel.ZIndex="2" Foreground="Black" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="94" Grid.ColumnSpan="2" Grid.Column="1" />
+        <Label Content="James R. Frazier" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" IsEnabled="False" Margin="79,134,0,0" Name="JamesRFrazierLabel" Panel.ZIndex="2" Foreground="Black" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92" Grid.Column="2" />
+        <Label Content="Brent Schulz" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="87,134,0,0" Name="BrentSchulzLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" Grid.Column="3" />
+        <Label Content="Harold G. Worley" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="169,134,0,0" Name="HaroldGWorleyLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="94" Foreground="Black" Grid.Column="3" />
+        <Label Content="Gary Loftus" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="450,134,0,0" Name="GaryLoftusLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" Grid.Column="3" />
+        <Label Content="W. Paul Prince" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="533,134,0,0" Name="WPaulPrinceLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="90" Foreground="Black" Grid.Column="3" />
+        <Label Content="Carl Schwartzkopf" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="700,134,0,0" Name="CarlSchwartzkopfLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="102" Foreground="Black" Grid.Column="3" />
+        <Label Content="Marion Foxworth III" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="792,134,0,0" Name="MarionFoxworthIIILabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="119" Foreground="Black" Grid.Column="3" />
+        <Label Content="Jody Prince" FontFamily="Segoe UI" FontSize="9" FontStretch="Normal" FontWeight="Bold" Grid.Row="1" Height="28" HorizontalAlignment="Left" IsEnabled="False" Margin="270,134,0,0" Name="JodyPrinceLabel" Panel.ZIndex="2" VerticalAlignment="Top" Width="74" Foreground="Black" Grid.Column="3" />
 
-        <Button Content="Main Lower Third Activate" Grid.Row="1" HorizontalAlignment="Left" Margin="12,0,0,374" Name="MainLowerThirdActivate" Width="167" Height="78" VerticalAlignment="Bottom" Click="MainLowerThirdActivate_Click" />
-        <Button Content="Main Lower Third Deactivate" Grid.Row="1" Height="78" HorizontalAlignment="Left" Margin="13,0,0,290" Name="MainLowerThirdDeactivate" VerticalAlignment="Bottom" Width="166" Click="MainLowerThirdDeactivate_Click" />
-        <Button Content="Logo" Grid.Row="1" Height="78" HorizontalAlignment="Left" Margin="12,0,0,207" Name="LiveLogo" VerticalAlignment="Bottom" Width="167" Click="LiveLogo_Click" />
-        <Button Content="Logo Deactivate" Grid.Row="1" HorizontalAlignment="Left" Margin="12,0,0,125" Name="LiveLogoDeactivate" Width="167" Height="78" VerticalAlignment="Bottom" Click="LiveLogoDeactivate_Click" />
-        <Button Content="Clear Name and Title" Grid.Row="1" Height="23" Margin="0,0,24,403" Name="ClearNameAndTitle" VerticalAlignment="Bottom" Click="ClearNameAndTitle_Click" HorizontalAlignment="Right" Width="220" />
-        <Button Content="John Weaver" Grid.Row="1" Margin="0,0,24,374" Name="JohnWeaver" Click="JohnWeaver_Click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="220" />
-        <Label Content="Other Names and Titles" Grid.Row="1" Height="28" Margin="0,0,24,423" Name="NameAndTitleLabel" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="220" HorizontalContentAlignment="Center" />
-        <Button Content="Paul Whitten" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,345" Name="PaulWhitten" VerticalAlignment="Bottom" Width="220" Click="PaulWhitten_Click" />
-        <Button Content="Ann Wright" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,316" Name="AnnWright" VerticalAlignment="Bottom" Width="220" Click="AnnWright_Click" />
-        <Button Content="Steve Gosnell" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,287" Name="SteveGosnell" VerticalAlignment="Bottom" Width="220" Click="SteveGosnell_Click" />
-        <Button Content="Sheila Butler" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,259" Name="SheilaButler" VerticalAlignment="Bottom" Width="220" Click="SheilaButler_Click" />
-        <Button Content="Gary Watson" Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,24,232" Name="GaryWatson" Width="220" Click="GaryWatson_Click" Height="23" VerticalAlignment="Bottom" />
+        <Button Content="Main Lower Third Activate" Grid.Row="2" HorizontalAlignment="Left" Margin="6,0,0,5" Name="MainLowerThirdActivate" Width="167" Height="75" VerticalAlignment="Bottom" Click="MainLowerThirdActivate_Click" Grid.ColumnSpan="2" Grid.Column="1" />
+        <Button Content="Main Lower Third Deactivate" Grid.Row="2" Height="75" HorizontalAlignment="Left" Margin="0,0,0,4" Name="MainLowerThirdDeactivate" VerticalAlignment="Bottom" Width="166" Click="MainLowerThirdDeactivate_Click" Grid.Column="2" Grid.RowSpan="2" />
+        <Button Content="Logo" Grid.Row="4" Height="75" HorizontalAlignment="Left" Margin="6,0,0,4" Name="LiveLogo" VerticalAlignment="Bottom" Width="167" Click="LiveLogo_Click" Grid.ColumnSpan="2" Grid.Column="1" />
+        <Button Content="Logo Deactivate" Grid.Row="5" HorizontalAlignment="Left" Margin="0,0,0,3" Name="LiveLogoDeactivate" Width="167" Height="75" VerticalAlignment="Bottom" Click="LiveLogoDeactivate_Click" Grid.Column="2" />
+        <Button Content="Clear Name and Title" Grid.Row="2" Height="23" Margin="0,0,14,39" Name="ClearNameAndTitle" VerticalAlignment="Bottom" Click="ClearNameAndTitle_Click" HorizontalAlignment="Right" Width="220" Grid.Column="3" />
+        <Button Content="John Weaver" Grid.Row="2" Margin="0,0,14,10" Name="JohnWeaver" Click="JohnWeaver_Click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="220" Grid.Column="3" />
+        <Label Content="Other Names and Titles" Grid.Row="1" Height="28" Margin="0,0,14,59" Name="NameAndTitleLabel" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="220" HorizontalContentAlignment="Center" Grid.Column="3" Grid.RowSpan="2" />
+        <Button Content="Paul Whitten" Grid.Row="2" Height="23" HorizontalAlignment="Right" Margin="0,0,14,59" Name="PaulWhitten" VerticalAlignment="Bottom" Width="220" Click="PaulWhitten_Click" Grid.Column="3" Grid.RowSpan="2" />
+        <Button Content="Ann Wright" Grid.Row="3" Height="23" HorizontalAlignment="Right" Margin="0,0,14,30" Name="AnnWright" VerticalAlignment="Bottom" Width="220" Click="AnnWright_Click" Grid.Column="3" />
+        <Button Content="Steve Gosnell" Grid.Row="3" Height="23" HorizontalAlignment="Right" Margin="0,0,14,1" Name="SteveGosnell" VerticalAlignment="Bottom" Width="220" Click="SteveGosnell_Click" Grid.Column="3" />
+        <Button Content="Sheila Butler" Grid.Row="4" Height="23" HorizontalAlignment="Right" Margin="0,0,14,52" Name="SheilaButler" VerticalAlignment="Bottom" Width="220" Click="SheilaButler_Click" Grid.Column="3" />
+        <Button Content="Gary Watson" Grid.Row="4" HorizontalAlignment="Right" Margin="0,0,14,25" Name="GaryWatson" Width="220" Click="GaryWatson_Click" Height="23" VerticalAlignment="Bottom" Grid.Column="3" />
 
 
-        <Rectangle Grid.Row="1" HorizontalAlignment="Right" Margin="0,173,15,14" Name="rectangle1" Stroke="Black" Width="239" Panel.ZIndex="-1" />
-        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,51" Name="NameTextBox" VerticalAlignment="Bottom" Width="151" Text="Lucas Richardson" />
-        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,22" Name="TitleTextBox" VerticalAlignment="Bottom" Width="151" Text="Network Technician" />
-        <Button Content="Custom Name and Title" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,24,80" Name="CustomNameAndTitle" VerticalAlignment="Bottom" Width="220" Click="CustomNameAndTitle_Click" />
-        <Button Content="On Break Activate" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="187,0,0,413" Name="OnBreakButton" VerticalAlignment="Bottom" Width="167" Click="OnBreakButton_Click" />
-        <Button Content="On Break Deactivate" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="187,0,0,374" Name="OnBreakDeactivateButton" VerticalAlignment="Bottom" Width="167" Click="OnBreakDeactivateButton_Click" />
-        <Label Content="Name" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,0,181,51" Name="NameLabel" VerticalAlignment="Bottom" Width="63" />
-        <Label Content="Title" Grid.Row="1" Height="28" HorizontalAlignment="Right" Margin="0,0,181,17" Name="TitleLabel" VerticalAlignment="Bottom" Width="63" />
-        <Button Content="Scroll Activate" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="527,0,0,388" Name="ScrollActivate" VerticalAlignment="Bottom" Width="152" Click="ScrollActivate_Click" />
-        <Button Content="Scroll Deactivate" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="685,0,0,388" Name="ScrollDeactivate" VerticalAlignment="Bottom" Width="132" Click="ScrollDeactivate_Click" />
-        <Button Content="Granicus Login" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="369,0,0,388" Name="GranicusLogin" VerticalAlignment="Bottom" Width="149" Click="GranicusLogin_Click" />
-        <Label Content="Council Members Name and Title" HorizontalAlignment="Center" Margin="-2,-1,-2,0" Name="label2" Width="1088" HorizontalContentAlignment="Center" Height="28" VerticalAlignment="Top" Grid.RowSpan="2" />
-        <Rectangle Grid.Row="1" Margin="7,1,1,0" Name="rectangle2" Panel.ZIndex="-1" Stroke="Black" Height="160" VerticalAlignment="Top" />
-        <Rectangle Grid.Row="1" HorizontalAlignment="Left" Margin="363,173,0,12" Name="rectangle3" Panel.ZIndex="-1" Stroke="Black" Width="465" />
-        <Label Content="Scrolling Marquee" Grid.Row="1" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="363,0,0,423" Name="label3" VerticalAlignment="Bottom" Width="465" />
-        <TreeView Grid.Row="1" HorizontalAlignment="Left" Margin="371,0,0,22" Name="agendaItemsTree" Width="445" MouseDoubleClick="agendaItemsTree_MouseDoubleClick" Height="319" VerticalAlignment="Bottom" />
-        <Button Content="Test Background Activate" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="14,0,0,80" Name="testBackgroundActivate" VerticalAlignment="Bottom" Width="167" Click="testBackgroundActivate_Click" />
-        <Button Content="Test Background Deactivate" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="14,0,0,42" Name="testBackgroundDeactivate" VerticalAlignment="Bottom" Width="167" Click="testBackgroundDeactivate_Click" />
-        <Button Content="Clear All" Grid.Row="1" Height="78" HorizontalAlignment="Left" Margin="186,0,0,41" Name="clearAll" VerticalAlignment="Bottom" Width="167" Click="clearAll_Click" />
+        <Rectangle Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,1,8" Name="rectangle1" Stroke="Black" Width="246" Panel.ZIndex="-1" Height="411" VerticalAlignment="Bottom" Grid.Column="3" Grid.RowSpan="6" />
+        <TextBox Grid.Row="6" Height="23" HorizontalAlignment="Right" Margin="0,0,14,45" Name="NameTextBox" VerticalAlignment="Bottom" Width="151" Text="Lucas Richardson" Grid.Column="3" />
+        <TextBox Grid.Row="6" Height="23" HorizontalAlignment="Right" Margin="0,0,14,16" Name="TitleTextBox" VerticalAlignment="Bottom" Width="151" Text="Network Technician" Grid.Column="3" />
+        <Button Content="Custom Name and Title" Grid.Row="5" Height="23" HorizontalAlignment="Right" Margin="0,0,14,74" Name="CustomNameAndTitle" VerticalAlignment="Bottom" Width="220" Click="CustomNameAndTitle_Click" Grid.Column="3" Grid.RowSpan="2" />
+        <Button Content="On Break Activate" Grid.Row="2" Height="37" HorizontalAlignment="Left" Margin="0,0,0,43" Name="OnBreakButton" VerticalAlignment="Bottom" Width="167" Click="OnBreakButton_Click" Grid.Column="3" />
+        <Button Content="On Break Deactivate" Grid.Row="2" Height="37" HorizontalAlignment="Left" Margin="0,0,0,5" Name="OnBreakDeactivateButton" VerticalAlignment="Bottom" Width="167" Click="OnBreakDeactivateButton_Click" Grid.Column="3" />
+        <Label Content="Name" Grid.Row="6" Height="23" HorizontalAlignment="Right" Margin="0,0,171,45" Name="NameLabel" VerticalAlignment="Bottom" Width="63" Grid.Column="3" />
+        <Label Content="Title" Grid.Row="6" Height="28" HorizontalAlignment="Right" Margin="0,0,171,11" Name="TitleLabel" VerticalAlignment="Bottom" Width="63" Grid.Column="3" />
+        <Button Content="Scroll Activate" Grid.Row="2" Height="39" HorizontalAlignment="Left" Margin="342,0,0,23" Name="ScrollActivate" VerticalAlignment="Bottom" Width="152" Click="ScrollActivate_Click" Grid.Column="3" />
+        <Button Content="Scroll Deactivate" Grid.Row="2" Height="39" HorizontalAlignment="Left" Margin="498,0,0,23" Name="ScrollDeactivate" VerticalAlignment="Bottom" Width="132" Click="ScrollDeactivate_Click" Grid.Column="3" />
+        <Button Content="Granicus Login" Grid.Row="2" Height="39" HorizontalAlignment="Left" Margin="187,0,0,23" Name="GranicusLogin" VerticalAlignment="Bottom" Width="149" Click="GranicusLogin_Click" Grid.Column="3" />
+        <Label Content="Council Members Name and Title" HorizontalAlignment="Center" Margin="-2,-1,-2,0" Name="label2" Width="1088" HorizontalContentAlignment="Center" Height="28" VerticalAlignment="Top" Grid.RowSpan="2" Grid.ColumnSpan="4" />
+        <Rectangle Grid.Row="1" Margin="7,1,1,0" Name="rectangle2" Panel.ZIndex="-1" Stroke="Black" Height="160" VerticalAlignment="Top" Grid.ColumnSpan="4" />
+        <Rectangle Grid.Row="1" HorizontalAlignment="Left" Margin="176,0,0,8" Name="rectangle3" Panel.ZIndex="-1" Stroke="Black" Width="465" Height="411" VerticalAlignment="Bottom" Grid.Column="3" Grid.RowSpan="6" />
+        <Label Content="Scrolling Marquee" Grid.Row="1" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="176,0,0,59" Name="label3" VerticalAlignment="Bottom" Width="465" Grid.Column="3" Grid.RowSpan="2" />
+        <TreeView Grid.Row="3" HorizontalAlignment="Left" Margin="187,0,0,18" Name="agendaItemsTree" Width="443" MouseDoubleClick="agendaItemsTree_MouseDoubleClick" Height="290" VerticalAlignment="Bottom" Grid.Column="3" Grid.RowSpan="4" />
+        <Button Content="Test Background Activate" Grid.Row="6" Height="37" HorizontalAlignment="Left" Margin="0,0,0,58" Name="testBackgroundActivate" VerticalAlignment="Bottom" Width="167" Click="testBackgroundActivate_Click" Grid.Column="2" />
+        <Button Content="Test Background Deactivate" Grid.Row="6" Height="37" HorizontalAlignment="Left" Margin="0,0,0,20" Name="testBackgroundDeactivate" VerticalAlignment="Bottom" Width="167" Click="testBackgroundDeactivate_Click" Grid.Column="2" />
+        <Button Content="Clear All" Grid.Row="6" Height="75" HorizontalAlignment="Left" Margin="0,0,0,21" Name="clearAll" VerticalAlignment="Bottom" Width="167" Click="clearAll_Click" Grid.Column="3" />
+        <Rectangle Grid.ColumnSpan="4" Grid.Row="1" Height="411" HorizontalAlignment="Left" Margin="7,0,0,8" Name="rectangle4" Panel.ZIndex="-1" Stroke="Black" VerticalAlignment="Bottom" Width="361" Grid.RowSpan="6" />
     </Grid>
 </Window>
