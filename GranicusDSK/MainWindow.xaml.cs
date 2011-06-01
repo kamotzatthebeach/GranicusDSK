@@ -60,7 +60,8 @@ namespace WpfApplication1
                 newWindow.TreeLogoLowerLeft.AlphaTo(0, time, ease, delay);
                 MainLowerThirdDeactivateFunc();
                 newWindow.CurrentMarquee.AlphaTo(0, time, ease, 0);
-                newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
+                //newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
+                newWindow.CurrentTitleBackground.SlideTo(-86, 1200, time, ease, delay);
                 FadeOutCanvas(newWindow.FullscreenLogo);
                 newWindow.WebLink.AlphaTo(0, time, ease, delay);
             
@@ -324,7 +325,7 @@ namespace WpfApplication1
             var timeout2 = new Artefact.Animation.Timeout(500, true).OnUpdate((w) =>
             { }).OnComplete(w =>
             {
-                newWindow.LowerThirdBackground.DimensionsTo(0, 139, time, ease, delay);
+                newWindow.LowerThirdBackground.DimensionsTo(0, 139, time, ease2, delay);
 
             });
 
@@ -364,7 +365,10 @@ namespace WpfApplication1
 
 
             newWindow.CurrentMarquee.AlphaTo(1, time, ease, .3);
-            newWindow.CurrentTitleBackground.AlphaTo(1, time, ease, delay);
+            //newWindow.CurrentTitleBackground.AlphaTo(1, time, ease, delay);
+            //newWindow.CurrentTitleBackground.DimensionsTo(0, 139, time, ease, delay);
+            newWindow.CurrentTitleBackground.DimensionsTo(1440, 73, time, ease, delay);
+            newWindow.CurrentTitleBackground.SlideTo(-86, 922, time, ease, delay);
 
             test = newWindow.CurrentMarquee.ToString();
 
@@ -384,10 +388,19 @@ namespace WpfApplication1
         private void ScrollDeactivate_Click(object sender, RoutedEventArgs e)
         {
             double time = .75;
-            PercentHandler ease = AnimationTransitions.CubicEaseOut;
+            double delay = 0;
+            PercentHandler ease = AnimationTransitions.CubicEaseIn;
 
             newWindow.CurrentMarquee.AlphaTo(0, time, ease, 0);
-            newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
+            //newWindow.CurrentTitleBackground.AlphaTo(0, time, ease, .6);
+
+            var timeout2 = new Artefact.Animation.Timeout(500, true).OnUpdate((w) =>
+            { }).OnComplete(w =>
+            {
+                newWindow.CurrentTitleBackground.SlideTo(-86, 1200, time, ease, delay);
+
+            });
+
 
         }
 
