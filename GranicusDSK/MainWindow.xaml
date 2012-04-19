@@ -15,60 +15,60 @@
         </Grid.RowDefinitions>
         <Button  Grid.Row="1" Margin="168,22,0,0" Name="AlAllen" Click="button2_Click_1" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.Column="2" Grid.ColumnSpan="2">
             <StackPanel>
-                <Image Source="/;component/Images/Al%20Allen.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Al Allen.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="625,22,0,0" Name="BobGrabowski" Panel.ZIndex="2" Click="BobGrabowski_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/Bob%20Grabowski.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Bob Grabowski.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="355,22,0,0" Name="TomRice" Panel.ZIndex="2" Click="TomRice_Click" Height="111" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Grid.Column="3">
-            <Image Source="/;component/Images/Tom%20Rice.jpg" Panel.ZIndex="2" />
+            <Image Source="/Images/Tom Rice.jpg" Panel.ZIndex="2" />
         </Button>
         <Button  Grid.Row="1" Margin="177,22,0,0" Name="HaroldGWorley" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="HaroldGWorley_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/HaroldGWorley.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/HaroldGWorley.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="87,22,0,0" Name="BrentSchulz" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="BrentSchulz_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/Brent%20Schulz.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Brent Schulz.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="805,22,0,0" Name="MarionFoxworth" Panel.ZIndex="2" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="MarionFoxworth_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/Marion%20Foxworth.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Marion Foxworth.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="445,22,0,0" Name="GaryLoftus" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="GaryLoftus_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/Gary%20Loftus.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Gary Loftus.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="3,22,0,0" Name="PaulDPriceJr" Panel.ZIndex="2" Click="PaulDPriceJr_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1">
             <StackPanel>
-                <Image Source="/;component/Images/Paul%20D.%20Price,%20Jr.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Paul D. Price, Jr.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="78,22,0,0" Name="JamesRFrazier" Panel.ZIndex="2" Click="JamesRFrazier_Click" HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Grid.Column="2">
             <StackPanel>
-                <Image Source="/;component/Images/JamesRFrazier.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/JamesRFrazier.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="715,22,0,0" Name="CarlSchwartzkopf" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="CarlSchwartzkopf_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/Carl%20Schwartzkopf.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Carl Schwartzkopf.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="265,22,0,0" Name="JodyPrince" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="JodyPrince_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/Jody%20Prince.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/Jody Prince.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
         <Button  Grid.Row="1" Margin="535,22,0,0" Name="WPaulPrince" Panel.ZIndex="2"  HorizontalAlignment="Left" Width="75" Height="111" VerticalAlignment="Top" Click="WPaulPrince_Click" Grid.Column="3">
             <StackPanel>
-                <Image Source="/;component/Images/WPaulPrince.jpg" Panel.ZIndex="2" />
+                <Image Source="/Images/WPaulPrince.jpg" Panel.ZIndex="2" />
             </StackPanel>
         </Button>
 
